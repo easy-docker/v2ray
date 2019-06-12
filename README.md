@@ -14,7 +14,7 @@ docker run -d \
 --restart always \
 ghostry/v2ray
 sleep 5
-docker logs $name
+cat ~/.$name/config.json
 ```
 如果希望自定义UUID,增加参数
 ```
