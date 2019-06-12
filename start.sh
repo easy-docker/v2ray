@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ ! -f /v2ray/config.json ]; then
     mkdir -p /v2ray/
-    echo -e '{"inbounds":[{"port":80,"protocol":"vmess","settings":{"clients":[{"id":"\c' > /v2ray/config.json
+    echo -e '{"inbounds":[{"port":9011,"protocol":"vmess","settings":{"clients":[{"id":"\c' > /v2ray/config.json
     if [ ! $UUID ]; then
         UUID=`cat /proc/sys/kernel/random/uuid`
         echo "${UUID}"

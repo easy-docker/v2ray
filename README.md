@@ -9,7 +9,7 @@ docker container rm $name
 docker run -d \
 --name $name \
 --user $(id -u):$(id -g) \
--p 6800:6800 \
+-p 9011:9011 \
 -v ~/.$name:/v2ray \
 --restart always \
 ghostry/v2ray
