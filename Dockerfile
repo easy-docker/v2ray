@@ -8,6 +8,6 @@ RUN chmod +x /start.sh
 
 VOLUME ["/v2ray"]
 
-EXPOSE 80
+EXPOSE 9011
 
 CMD ["/start.sh"]
