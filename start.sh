@@ -9,4 +9,4 @@ if [ ! -f /v2ray/config.json ]; then
     echo -e "${UUID}\c" >> /v2ray/config.json
     echo '","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/movie"}}}],"outbounds":[{"protocol":"freedom","settings":{}},{"protocol":"blackhole","settings":{},"tag":"block"}],"routing":{"domainStrategy":"AsIs","rules":[{"type":"field","outboundTag":"block","protocol":["bittorrent"]}]}}' >> /v2ray/config.json
 fi
-/usr/bin/v2ray/v2ray -config=/v2ray/config.json
+/usr/bin/v2ray -config=/v2ray/config.json
