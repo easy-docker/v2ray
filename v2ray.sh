@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # Set ARG
 PLATFORM=$1
 TAG=$2

@@ -10,10 +10,7 @@ RUN set -ex \
     && apk add --no-cache tzdata openssl ca-certificates \
     && mkdir -p /etc/v2ray /usr/local/share/v2ray /var/log/v2ray \
     && chmod +x /root/v2ray.sh \
-    && /root/v2ray.sh "${TARGETPLATFORM}" "v4.42.1"
-
-VOLUME /etc/v2ray
-CMD [ "/usr/bin/v2ray", "-config", "/etc/v2ray/config.json" ]
+    && /root/v2ray.sh "${TARGETPLATFORM}" "v4.42.2"
 
 ADD start.sh /start.sh
 
